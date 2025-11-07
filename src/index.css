@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+:root {
+  --blue-color: rgb(92, 161, 214);
+  --light-blue-color: rgb(111, 190, 251);
+}
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+.textGradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(97, 111, 216) 31%,
+    rgba(0, 212, 255, 1) 59%,
+    rgba(0, 212, 255, 1) 82%
+  );
+  background-clip: text;
+}

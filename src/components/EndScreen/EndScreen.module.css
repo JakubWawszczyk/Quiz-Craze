@@ -1,0 +1,120 @@
+.endScreen {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.endScreen h2 {
+  font-size: 3rem;
+  margin-top: 10vh;
+}
+.endScreen h3 {
+  font-size: 2rem;
+  margin-bottom: 5%;
+  margin-top: 12.5vh;
+}
+.scoreInNumber {
+  color: rgb(5, 176, 5);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+.scoreInPercent {
+  color: rgb(103, 152, 249);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+.playAgain {
+  background-color: var(--blue-color);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-top: 5%;
+  padding: 1rem 3.5rem;
+  transition: background-color 0.3s;
+}
+.playAgain:hover {
+  background-color: var(--light-blue-color);
+}
+
+@media (min-width: 400px) and (min-height: 800px) {
+  .endScreen h2 {
+    font-size: 4rem;
+  }
+  .endScreen h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .scoreInNumber {
+    font-size: 2.5rem;
+  }
+  .endScreen h2 {
+    font-size: 4rem;
+  }
+  .endScreen h3 {
+    font-size: 3rem;
+  }
+  .scoreInNumber {
+    font-size: 3.5rem;
+  }
+  .playAgain {
+    font-size: 2rem;
+  }
+  .scoreInPercent {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .scoreInNumber {
+    font-size: 3rem;
+  }
+  .endScreen h2 {
+    font-size: 4.5rem;
+  }
+  .endScreen h3 {
+    font-size: 3.5rem;
+  }
+  .scoreInNumber {
+    font-size: 4rem;
+  }
+  .playAgain {
+    margin-top: 0;
+    font-size: 2.5rem;
+  }
+  .scoreInPercent {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .scoreInNumber {
+    font-size: 3.5rem;
+    margin-top: 2.5vh;
+  }
+  .endScreen h2 {
+    font-size: 5.5rem;
+  }
+  .endScreen h3 {
+    font-size: 4rem;
+    margin-bottom: 7.5vh;
+    margin-top: 15vh;
+  }
+  .scoreInNumber {
+    font-size: 4.5rem;
+    margin-bottom: 5vh;
+  }
+  .playAgain {
+    margin: 0;
+    font-size: 3.5rem;
+  }
+  .scoreInPercent {
+    font-size: 4.5rem;
+    margin-bottom: 5vh;
+  }
+}

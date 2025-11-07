@@ -1,0 +1,288 @@
+main {
+  max-width: 100vw;
+  overflow: hidden;
+}
+.topSection {
+  align-items: center;
+  display: flex;
+  height: 15vw;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+i {
+  cursor: pointer;
+  font-size: 1.75rem;
+  padding-left: 20px;
+}
+.progress {
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.progressBar {
+  background-color: #eeecec;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  width: 90px;
+}
+.progressBar::before {
+  background-color: var(--blue-color);
+  content: '';
+  display: block;
+  width: var(--bar-width, 0%);
+}
+.progressBar::before,
+.progressBar {
+  height: 10px;
+}
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-top: 5vh;
+}
+.questionNumber {
+  font-weight: 600;
+  margin: 5rem 0 1.5rem;
+  text-align: left;
+  padding-left: 20px;
+  width: 100vw;
+  font-size: 1.1rem;
+}
+.questions {
+  align-content: center;
+  align-items: center;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 30vh;
+  justify-content: center;
+  justify-items: center;
+  max-width: 1500px;
+  width: 90vw;
+}
+.questionButton {
+  align-items: center;
+  background-color: var(--blue-color);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  height: 80%;
+  justify-content: center;
+  max-width: 600px;
+  padding: 2% 5%;
+  transition: bcground-color 1s;
+  width: 95%;
+}
+h3 {
+  font-size: 1.15rem;
+  margin: 15px 10px 60px 15px;
+}
+.green {
+  background-color: rgb(11, 188, 11);
+  transition: background-color 0.5s;
+}
+.buttonCorrectAnimation {
+  animation: buttonCorrectAnimation 3s;
+}
+.buttonIncorrectAnimation {
+  animation: buttonIncorrectAnimation 3s;
+}
+.questions > li:hover {
+  background-color: var(--light-blue-color);
+}
+@media (min-width: 660px) and (orientation: landscape) {
+  h2 {
+    font-size: 2rem;
+    margin-top: 5vh;
+  }
+  .topSection {
+    height: 10vh;
+  }
+  .questionNumber {
+    margin: 2rem 0 1rem;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+    margin-top: 7.5vh;
+  }
+  i {
+    font-size: 2.75rem;
+    padding-left: 40px;
+  }
+  .progress {
+    font-size: 1.25rem;
+  }
+  .progressBar {
+    width: 140px;
+  }
+
+  .progressBar::before,
+  .progressBar {
+    height: 25px;
+  }
+  .questionNumber {
+    font-size: 1.5rem;
+    margin: 10rem 0 2rem;
+  }
+  .questions {
+    grid-gap: 1.25rem;
+    height: 35vh;
+  }
+  .questionButton {
+    width: 95%;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 760px) and (min-height: 1100px) {
+  .questions {
+    height: 40vh;
+  }
+  .questionButton {
+    font-size: 1.25rem;
+  }
+  .questionNumber {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .topSection {
+    height: 10vw;
+  }
+
+  i {
+    font-size: 2.75rem;
+    padding-left: 5rem;
+  }
+
+  .progress {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .progressBar {
+    width: 175px;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+
+  .progressBar::before,
+  .progressBar {
+    height: 30px;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    margin-top: 7.5vh;
+  }
+
+  .questionNumber {
+    font-size: 1.75rem;
+    margin: 3.5rem 0 2rem;
+    padding-left: 5rem;
+  }
+
+  .questions {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 35vh;
+    width: 80vw;
+  }
+
+  .questionButton {
+    width: 90%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+}
+
+@keyframes buttonCorrectAnimation {
+  0% {
+    background-color: var(--blue-color);
+  }
+  10% {
+    background-color: rgb(11, 188, 11);
+  }
+  35% {
+    background-color: var(--blue-color);
+  }
+  45% {
+    background-color: rgb(11, 188, 11);
+  }
+  70% {
+    background-color: var(--blue-color);
+  }
+  80% {
+    background-color: rgb(11, 188, 11);
+  }
+  100% {
+    background-color: rgb(11, 188, 11);
+  }
+}
+@media (min-width: 1600px) {
+  h2 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .questionNumber {
+    font-size: 2.25rem;
+  }
+  i {
+    font-size: 2.25rem;
+  }
+  .progress {
+    font-size: 1.75rem;
+  }
+  .progressBar {
+    width: 200px;
+  }
+}
+@keyframes buttonIncorrectAnimation {
+  0% {
+    background-color: var(--blue-color);
+  }
+  10% {
+    background-color: red;
+  }
+  35% {
+    background-color: var(--blue-color);
+  }
+  45% {
+    background-color: red;
+  }
+  70% {
+    background-color: var(--blue-color);
+  }
+  80% {
+    background-color: red;
+  }
+  100% {
+    background-color: red;
+  }
+}
